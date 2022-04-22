@@ -2,7 +2,7 @@
 .vscode
 bazel-bin
 bazel-out
-bazel-gtexa
+bazel-trkvs
 bazel-testlogs
 
 # Prerequisites
