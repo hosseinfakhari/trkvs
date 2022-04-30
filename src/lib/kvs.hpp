@@ -1,12 +1,21 @@
-#include <iostream>
+#include <map>
+#include <string>
+#include <vector>
 
 #ifndef _KVS_CORE
 #define _KVS_CORE
 namespace TRKVS {
 class KVS {
+   private:
+    std::map<std::string, std::map<std::string, int>::iterator> keys;
+    std::map<std::string, int> values;
+
    public:
-    KVS();
-    ~KVS() {}
+    const std::vector<std::string> get_keys();
+    void set_item(const std::string, const std::string);
+    const std::string get_item(const std::string);
+    void delete_item(const std::string);
+    const int count_of(std::string);
 };
 }  // namespace TRKVS
 
