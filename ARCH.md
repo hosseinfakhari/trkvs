@@ -2,9 +2,9 @@
 
 here is a brief explanation of how the code is designed to perform `get`/`set`/`delete` and `count` of `values` operations.
 
-to achieve the best performance for those operations I used two `std::map` one of which stores the keys and the reference to the second `map` which stores the values and number of referenced items.
+to achieve the best performance for those operations I used two `std::unordered_map` one of which stores the keys and the reference to the second `unordered_map` which stores the values and number of referenced items.
 
-so in this case all operations have logarithmic complexity.
+so in this case all operations have O(n) complexity.
 
 ![image info](./doc/memdiagram.png)
 
