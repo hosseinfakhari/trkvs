@@ -1,4 +1,4 @@
-#include <map>
+#include <unordered_map>
 #include <string>
 #include <vector>
 
@@ -7,8 +7,8 @@
 namespace TRKVS {
 class KVS {
    private:
-    std::map<std::string, std::map<std::string, int>::iterator> keys;
-    std::map<std::string, int> values;
+    std::unordered_map<std::string, std::unordered_map<std::string, int>::iterator> keys;
+    std::unordered_map<std::string, int> values;
 
    public:
     const std::vector<std::string> get_keys();

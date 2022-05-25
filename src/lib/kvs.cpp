@@ -10,7 +10,7 @@ const std::vector<std::string> KVS::get_keys() {
 }
 
 void KVS::set_item(const std::string key, const std::string value) {
-    std::map<std::string, int>::iterator val;
+    std::unordered_map<std::string, int>::iterator val;
     if (keys.find(key) != keys.end()) {
         this->delete_item(key);
     }
