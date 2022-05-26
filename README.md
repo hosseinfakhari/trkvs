@@ -14,4 +14,11 @@ make run
 make test
 ```
 
+## Develope with docker container
+if you have docker on your machine, no need to install development tools, just run the below command to get inside the development container
+```
+./dev-environment.sh
+```
+
+
 ### [Check the Arch.md before get into the code](ARCH.md)
