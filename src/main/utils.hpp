@@ -11,7 +11,7 @@ std::vector<std::string> split(std::string str, std::string token) {
     str.erase(0, str.find_first_not_of(' '));
     std::vector<std::string> result;
     while (str.size()) {
-        int index = str.find(token);
+        unsigned int index = str.find(token);
         if (index != std::string::npos) {
             result.push_back(str.substr(0, index));
             str = str.substr(index + token.size());
@@ -66,7 +66,7 @@ class CommandArgsValidator : public BaseValidator<std::vector<std::string>> {
     int validLength;
 
    public:
-    CommandArgsValidator(int validLength) : validLength(validLength) {}
+    CommandArgsValidator(long unsigned int validLength) : validLength(validLength) {}
     bool validate(std::vector<std::string> testVector) {
         if (testVector.size() != validLength) {
             return false;
