@@ -1,4 +1,5 @@
 .idea
+.clwb
 .DS_Store
 .vscode
 bazel-bin
